@@ -146,8 +146,8 @@ p {
 /* ===== Buttons ===== */
 .btn {
     display: inline-block;
-    padding: 12px 30px;
-    font-size: 1rem;
+    padding: 10px 25px;
+    font-size: 0.95rem;
     font-weight: 500;
     text-align: center;
     border-radius: var(--radius-md);
@@ -242,24 +242,30 @@ p {
     z-index: 1000;
     background-color: transparent;
     transition: var(--transition);
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .header.sticky {
     background-color: var(--white);
     box-shadow: var(--shadow-md);
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .header-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
+}
+
+.header-btn .btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
 }
 
 .logo a {
     font-family: var(--heading-font);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--white);
     transition: var(--transition);
@@ -1748,12 +1754,29 @@ p {
     }
     
     /* Header & Navigation */
+    .header {
+        padding: 10px 0;
+    }
+    
+    .header.sticky {
+        padding: 8px 0;
+    }
+    
     .header-wrapper {
-        padding: 12px 0;
+        padding: 0;
+    }
+    
+    .logo a {
+        font-size: 1.4rem;
     }
     
     .logo img {
         max-height: 35px;
+    }
+    
+    .header-btn .btn {
+        padding: 6px 15px;
+        font-size: 0.85rem;
     }
     
     .mobile-menu-btn {
@@ -2005,8 +2028,31 @@ p {
     }
 }
 
-/* Mobile Phones (576px and below) */
+/* Mobile (576px and below) */
 @media (max-width: 576px) {
+    /* Header & Navigation */
+    .header {
+        padding: 8px 0;
+    }
+    
+    .header.sticky {
+        padding: 6px 0;
+    }
+    
+    .logo a {
+        font-size: 1.3rem;
+    }
+    
+    .header-btn .btn {
+        padding: 5px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .mobile-menu-btn span {
+        width: 22px;
+        margin: 4px 0;
+    }
+
     .container {
         max-width: 100%;
         padding: 0 15px;
@@ -2498,6 +2544,29 @@ p {
 
 /* Very Small Mobile Phones (320px and below) */
 @media (max-width: 320px) {
+    /* Header & Navigation */
+    .header {
+        padding: 6px 0;
+    }
+    
+    .header.sticky {
+        padding: 5px 0;
+    }
+    
+    .logo a {
+        font-size: 1.2rem;
+    }
+    
+    .header-btn .btn {
+        padding: 4px 10px;
+        font-size: 0.75rem;
+    }
+    
+    .mobile-menu-btn span {
+        width: 20px;
+        margin: 3px 0;
+    }
+
     body {
         font-size: 0.75rem;
     }
